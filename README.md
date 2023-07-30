@@ -1,5 +1,5 @@
 # SpringBootStarter
-##  대학생때 만들었던 리조트 프로젝트를 리뉴얼 중입니다
+##  대학생때 만들었던 리조트 예약 홈페이지 프로젝트를 리뉴얼 중입니다
 | |개발 환경(AS-IS) | 개발 환경(TOBE) |
 |----|----|----|
 |1| 프레임워크 : springframework 4.3.3.RELEASE | springframework.boot 3.1.2 |
