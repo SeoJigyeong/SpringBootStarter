@@ -1,12 +1,11 @@
 package com.renew.seognielProject.domain;
 import java.time.LocalDateTime;
 
-import org.springframework.data.annotation.Id;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
@@ -15,7 +14,7 @@ public class Reservation {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     
     @Column(name = "name", nullable = false)
     private String name;
@@ -54,11 +53,11 @@ public class Reservation {
     public Reservation() {
     }
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

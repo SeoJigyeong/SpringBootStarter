@@ -17,17 +17,17 @@ repositories {
 }
 
 dependencies {
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools' 
 	compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     runtimeOnly 'org.postgresql:postgresql'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test' 			// testImplementation JUnit test 의존성 주입
+	developmentOnly 'org.springframework.boot:spring-boot-devtools' 
 }
 
 tasks.named('test') {
-	useJUnitPlatform()
+	useJUnitPlatform() 																// JUnit test 의존성 주입
 }
